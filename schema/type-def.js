@@ -27,14 +27,14 @@ const typeDefs = gql`
     
     }
     input CreateUserinput {
-        name:String!
-        username:String!
-        age:Int!
+        name: String!
+        username: String!
+        age: Int!
         nationality: Nationality = INDIA
         
     }
     input UpdateUsernameinput {
-        id:ID
+        id: ID!
         newUsername:String! 
         
     }

@@ -47,14 +47,14 @@ const resolvers = {
             return user;
         },
         updateUsername: (parent, args, contents) => {
-           const {id , newUsername} = args.input
+           const { id , newUsername } = args.input
            let userUpdated;
+    
            UserList.forEach((user)=>{
-                if(user.id === id){
+                if(user.id == id){
                     user.username = newUsername;
                     userUpdated = user;
                 }
-
            });
             
            return userUpdated;
